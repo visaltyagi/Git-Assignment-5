@@ -1,0 +1,65 @@
+sudo apt-get update
+mkdir assignment5
+ls  
+cd assignment5
+touch main.txt
+ls  
+git init
+git add main.txt
+git status
+git commit –m "committing main.txt"
+git show-branch master
+git remote add Git-Assignment-5 git@github.com:visaltyagi/Git-Assignment-5.git
+git remote –v
+git branch
+cd ..
+ssh-keygen
+cd .ssh
+ls  
+sudo cat id_rsa.pub
+cd ..
+cd assignment5
+git push Git-Assignment-5 master
+git branch test
+git branch feature1
+git branch feature2
+git branch
+git checkout feature1
+touch f1.txt
+git status
+git add f1.txt
+git commit –m "committing f1.txt file"
+git checkout feature2
+touch f2.txt
+git status
+git add f2.txt
+git commit –m "committing f2.txt file"
+git push Git-Assignment-5 feature1
+git push Git-Assignment-5 feature2
+git push Git-Assignment-5 test
+git checkout test
+git merge feature1
+ls
+git merge feature2
+ls  
+git push Git-Assignment-5 test
+git checkout master
+git merge test
+ls  
+git push Git-Assignment-5 master
+git reflog
+git branch hotfix
+git checkout hotfix
+touch urgent.txt
+git add urgent.txt
+git commit –m "committing urgent.txt file"
+git push Git-Assignment-5 hotfix
+git checkout master
+git merge hotfix
+ls  
+git push Git-Assignment-5 master
+git reflog
+git checkout master
+git branch –D hotfix
+git branch
+git push Git-Assignment-3 –delete hotfix
